@@ -6,13 +6,13 @@ from  kanfang.items import FangwuItem
 
 sturl=[]
 for i in range(1,150):
-      sturl.append('http://newhouse.cd.fang.com/house/s/b9%d/?ctm=1.cd.xf_search.page.12'%i)
+    sturl.append('http://newhouse.dl.fang.com/house/s/b9%d/?ctm=1.cd.xf_search.page.' % i)
 
 # print(sturl)
 
 class KanfangSpider(scrapy.Spider):
   name = "kanfang"
-  allowed_domains = [".cd.fang.com"]
+  allowed_domains = [".dl.fang.com"]
   start_urls = sturl
 
   def parse(self, response):
