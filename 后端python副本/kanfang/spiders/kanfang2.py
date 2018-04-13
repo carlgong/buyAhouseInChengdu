@@ -5,8 +5,8 @@ from  kanfang.items import FangwuItem
 
 
 sturl=[]
-for i in range(1,150):
-    sturl.append('http://newhouse.dl.fang.com/house/s/b9%d/?ctm=1.cd.xf_search.page.' % i)
+for i in range(1, 17):
+    sturl.append('http://newhouse.dl.fang.com/house/s/b9%d/?ctm=1.dl.xf_search.page.' % i)
 
 # print(sturl)
 
